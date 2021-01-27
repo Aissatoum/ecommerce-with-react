@@ -1,0 +1,108 @@
+.flex-container_product {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+ /* position: relative;
+ left: 230px;
+ */
+} 
+.flex {
+  padding: 10px;
+  margin:10px;
+  background-color: #fff;
+  border: .5px dotted black;
+}
+.flex img {
+  width: 285px;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 5px 5px 5px black;
+  z-index: -4;
+  margin: 20px 60px;
+  padding: 10px;
+}
+.flex h3,
+.flex p {
+  width: 280px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 55px;
+}
+.btn_flex{
+  color:#fff;
+  background-color: #29293d;
+  width: 90%;
+  height: 40px;
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 5px 5px 5px black;
+  font-size: 17px;
+}
+
+.product-adver h2 {
+  position: absolute;
+  top:80px;
+  left: 200px;
+  width:60%;
+  height:30%;
+  padding: 5px;
+  color: #fff;
+  border: 2px solid green;
+  background-color: #9933ff;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 30px;
+
+}
+.product-adver h3{
+  position: absolute;
+  top:160px;
+  left: 200px;
+  width:60%;
+  height:30%;
+  padding: 5px;
+  color: #fff;
+  border: 2px solid #100011;
+  background-color:black;
+  opacity:.8;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom:1px solid yellow;
+  font-size: 30px;
+}
+strong{
+  color:yellow;
+}
+
+.product{
+  background-image: url("https://i.pinimg.com/474x/74/96/a3/7496a3619d4a27058391579b1ba6d576.jpg");
+  background-position: center;
+  background-size:100%;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  position: relative;
+  height:50vh;
+}
+.product_main{
+  background-color:#f5f5f5;
+}
+.filter-select{
+  position: relative;
+  top:300px;
+  right:40px;
+  float: right;
+  width:20%;
+  height: 50px;
+  background:#e6e6ff;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border:1px solid #8080ff;
+  text-align: center;
+  font-size: medium;
+  outline: none;
+
+}

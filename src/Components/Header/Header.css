@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Gotham;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width:100%;
+}
+header{
+ 
+  min-height: 70px;
+  background-color: #000033;
+  font-family: Gotham;
+  color:whitesmoke;
+  overflow:hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap: wrap;
+  font-size: 2vw;
+}
+header ul li{
+  display:inline-block;
+}
+header ul li a{
+  text-decoration: none;
+  color:whitesmoke;
+  text-transform: uppercase;
+  opacity: 0.8;
+  padding: 0 15px;
+}
+header ul li a:hover{
+  text-transform: unset;
+  opacity:0.9;
+  font-size: 2rem;
+}
+header ul li a:hover{
+  opacity:1;
+}
+header ul li::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: yellow;
+  display: block;
+  margin: auto;
+  transition: .5s;
+}
+header .menux,
+header .closex{
+  cursor: pointer;
+  text-transform: uppercase;
+  border:1px solid #fff;
+  padding:10px 20px;
+  margin-right:20px;
+  display:none;
+}
+header .closex{
+  position:absolute;
+  top:10px;
+  right: 0;
+  border-radius: 5px;
+}
+.closing{
+  min-height: 100vh;
+  background:burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closing h2{
+  text-transform:uppercase;
+  letter-spacing: 4px;
+  color:#fff;
+  font-size:2.5rem;
+}
+@media (max-width: 360px) {
+  header .logo,
+  header ul {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      line-height: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  header ul {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background: #8080ff;
+      width: 26%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      z-index: 99;
+      transition: 0.5s linear;
+  }
+  header ul.toggle {
+      left: 0;
+  }
+  header ul li {
+      line-height: normal;
+  }
+  header .menux,
+  header .closex {
+      display: block;
+  }
+  header .logo {
+      width: initial;
+      margin-left: 20px;
+      line-height: 70px;
+  }
+  .closing h2 {
+      font-size: 1.4rem;
+  }
+}
