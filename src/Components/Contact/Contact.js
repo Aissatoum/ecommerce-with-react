@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import './Contact.css'
 
 const emailRegex = RegExp(
@@ -150,7 +151,8 @@ class Contact extends React.Component {
             </form>
       </div>
            </section> 
-          </main>              
+          </main>     
+          <Footer />         
       </div>
     );
   }

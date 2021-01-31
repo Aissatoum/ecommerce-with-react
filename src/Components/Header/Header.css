@@ -12,7 +12,7 @@ body {
 }
 header{
  
-  min-height: 70px;
+  min-height: 40px;
   background-color: #000033;
   font-family: Gotham;
   color:whitesmoke;
@@ -21,7 +21,7 @@ header{
   justify-content: space-between;
   align-items:center;
   flex-wrap: wrap;
-  font-size: 2vw;
+  font-size:1em;
 }
 header ul li{
   display:inline-block;
@@ -40,15 +40,6 @@ header ul li a:hover{
 }
 header ul li a:hover{
   opacity:1;
-}
-header ul li::after {
-  content: '';
-  width: 0;
-  height: 2px;
-  background: yellow;
-  display: block;
-  margin: auto;
-  transition: .5s;
 }
 header .menux,
 header .closex{

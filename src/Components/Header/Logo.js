@@ -10,7 +10,7 @@ class Logo extends React.Component{
   render(){
   return (
     <div className="logo">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/18/02/73/gallery-of-african-art.jpg" alt="logo" style={{width: "20%", height: "20%", margin: "20px 7px"}}/>
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/18/02/73/gallery-of-african-art.jpg" alt="logo" style={{width: "10%", height: "10%", margin: "20px 7px"}}/>
     </div>
   );
 }
