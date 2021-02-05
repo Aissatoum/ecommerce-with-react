@@ -177,14 +177,14 @@ padding:90px;
     font-weight: lighter;
   }
   
-  input {
+  input, textarea{
     padding: 10px 10px;
     border-radius: 5px;
     outline: none;
     border: 1px solid #cfcfcf;
   }
   
-  input::placeholder {
+  input::placeholder , textarea {
     font-size: 1.2em;
     font-weight: lighter;
     color: #999;
@@ -211,7 +211,8 @@ padding:90px;
   .firstName,
   .lastName,
   .email,
-  .password {
+  .password,
+  .textarea {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
@@ -219,14 +220,14 @@ padding:90px;
   
   .firstName,
   .lastName {
-    width: 49%;
-  }
-  
-  .email,
-  .password {
     width: 100%;
   }
   
+  .email,
+  .password,
+  .textarea {
+    width: 100%;
+  }
   .createAccount {
     width: 100%;
     display: flex;
@@ -258,6 +259,6 @@ padding:90px;
     font-weight: lighter;
   }
   
-/* style h1 tag in the form using gradient*/
+
 
 /* footer style*/

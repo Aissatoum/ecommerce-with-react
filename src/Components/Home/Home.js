@@ -10,12 +10,6 @@ class Home extends React.Component{
         <div className="Home">
         <div className="hero">
             <ImageSlider slides={SliderData} />
-            <div className="banner-title_move">
-            <div className="banner-title">
-              <h1>African<span> Art and Finger Print Gallery of African</span> come and discover more.</h1>
-              <button type="button" className="btn"><span>EXPLORE</span></button>
-          </div>    
-          </div>
           </div>
       <main>
       <section className="art-work">

@@ -1,74 +1,4 @@
-/* Filter */
-/* .form-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 85%;
-  margin: 35px;
-  
-} */
 
-/* .form-container #filterSelect {
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: .2rem; */
-  /* border-bottom: 2px solid #2f2f2f;
-  border-top: 2px solid #2f2f2f; */
-/* } */
-
-/* .form-container #priceSelect {
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: .2rem; */
-  /* border-bottom: 2px solid #2f2f2f;
-  border-top: 2px solid #2f2f2f; */
-/* }
-.form-container .filters{
-  text-transform: uppercase;
-  letter-spacing: .5rem;
-} */
-/* #African-Art > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
-/* .filter{
-padding: 10px;
-  background-color: #fff;
-border: .5px dotted black;
-}
-.filter h2,
-    .filter p {
-      width: 280px;
-      font-size: 18px;
-      text-align: center;
-      margin-left: 55px;
-    }
- */
-
-/* #African-Art > div {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 23px;
-  padding: 32px 70px;
-} */
-/* .card-Art{
-  background-color: #fdfdfdd2;
-  box-shadow: 1px 1px 3px rgba(133, 129, 129, 0.74);
-  cursor: pointer;
-  margin-bottom: 15px;
-} */
-
-/* div .Art-img{
-  width: 285px;
-      height: 380px;
-      object-fit: cover;
-      object-position: center;
-      box-shadow: 5px 5px 5px black;
-      z-index: -4;
-      margin: 20px 60px;
-      padding: 10px;
-} */
 .btn_flex{
   color:#fff;
   background-color: #262626;
@@ -123,4 +53,16 @@ border: .5px dotted black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media screen and (max-width: 450px) {
+  .prod{
+    background-color:#333300;
+  }
+  .single_product{
+    background-color: #33001a;
+    color:#fff;
+  }
+  .single_product h1{
+    color:burlywood
+  }
 }

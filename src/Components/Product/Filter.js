@@ -63,7 +63,7 @@ filteringName = (e)=>{
 }
 render(){
     return(
-      <div >
+      <div className="prod">
           <Filterapp 
           sorting={this.sorting}
           sorts={this.state.sort}
@@ -74,7 +74,6 @@ render(){
        <div>
        </div>
   <Footer />
-
       </div>
     );
   }

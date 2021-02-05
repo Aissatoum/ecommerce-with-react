@@ -17,6 +17,7 @@ const formValid = ({ formErrors, ...rest }) => {
   });
   return valid;
 };
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -25,11 +26,13 @@ class Contact extends React.Component {
       lastName: null,
       email: null,
       password: null,
+      textarea:null,
       formErrors: {
         firstName: "",
         lastName: "",
         email: "",
-        password: ""
+        password: "",
+        textarea: ""
       }
     };
   }
@@ -42,6 +45,7 @@ class Contact extends React.Component {
         Last Name: ${this.state.lastName}
         Email: ${this.state.email}
         Password: ${this.state.password}
+        textarea: ${this.state.textarea}
       `);
     } else {
       console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
@@ -71,6 +75,10 @@ class Contact extends React.Component {
         formErrors.password =
           value.length < 6 ? "minimum 6 characaters required" : "";
         break;
+        case "textarea":
+        formErrors.textarea =
+          value.length < 3 ? "minimum 3 characaters required" : "";
+        break;
       default:
         break;
     }
@@ -89,7 +97,7 @@ class Contact extends React.Component {
       <div className="form-wrapper">
       <form onSubmit={this.handleSubmit} noValidate>
             <div className="firstName">
-              <label htmlFor="firstName">First Name</label>
+              <label For="firstName">First Name</label>
               <input
                 className={formErrors.firstName.length > 0 ? "error" : null}
                 placeholder="First Name"
@@ -103,7 +111,7 @@ class Contact extends React.Component {
               )}
             </div>
             <div className="lastName">
-              <label htmlFor="lastName">Last Name</label>
+              <label For="lastName">Last Name</label>
               <input
                 className={formErrors.lastName.length > 0 ? "error" : null}
                 placeholder="Last Name"
@@ -117,7 +125,7 @@ class Contact extends React.Component {
               )}
             </div>
             <div className="email">
-              <label htmlFor="email">Email</label>
+              <label For="email">Email</label>
               <input
                 className={formErrors.email.length > 0 ? "error" : null}
                 placeholder="Email"
@@ -131,7 +139,7 @@ class Contact extends React.Component {
               )}
             </div>
             <div className="password">
-              <label htmlFor="password">Password</label>
+              <label For="password">Password</label>
               <input
                 className={formErrors.password.length > 0 ? "error" : null}
                 placeholder="Password"
@@ -142,6 +150,12 @@ class Contact extends React.Component {
               />
               {formErrors.password.length > 0 && (
                 <span className="errorMessage">{formErrors.password}</span>
+              )}
+            </div>
+            <div className="textarea">
+              <textarea className={formErrors.textarea.length > 0 ? "error" : null} onChange={this.handleChange}>Your comment..</textarea>
+              {formErrors.textarea.length > 0 && (
+                <span className="errorMessage">{formErrors.textarea}</span>
               )}
             </div>
             <div className="createAccount">
